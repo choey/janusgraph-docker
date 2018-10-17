@@ -20,3 +20,6 @@ flogs:
 
 sh:
 	@docker exec -it $(shell docker ps -aqf ancestor=$(IMAGE_NAME)) /bin/bash
+
+push:
+	@docker push $(IMAGE_NAME)
