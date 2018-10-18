@@ -18,6 +18,6 @@ RUN unzip ${ZIP_FILENAME} > /dev/null && \
 	rm -rf javadocs && \
 	rm -rf examples
 
-# slashes are important! secret incantation credits to https://stackoverflow.com/a/30220096/6211503
-ADD conf/ ./conf/
+# to change config, edit /usr/bin/janusgraph/conf/gremlin-server/gremlin-server.yaml
+# other config examples are under /usr/bin/janusgraph/conf/...
 ENTRYPOINT [ "/usr/lib/janusgraph/bin/gremlin-server.sh" ]
