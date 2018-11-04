@@ -4,7 +4,9 @@
 
 # building
 
-Issuing `make build` builds `choey2k5/janusgraph:latest`, installing JanusGraph in `/usr/bin/janusgraph` and copying `.conf/` to `/usr/bin/janusgraph/conf/` for config overrides.
+Issuing `make build` builds `choey2k5/janusgraph:latest`, a container with JanusGraph installed @ `/usr/bin/janusgraph`.
+
+Files are recursively copied from `.conf/` (local) to `/usr/bin/janusgraph/conf/` (container) for config overrides.
 
 # config
 
